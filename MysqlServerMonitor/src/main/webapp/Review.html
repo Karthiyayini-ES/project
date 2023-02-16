@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/303637f791.js" crossorigin="anonymous"></script>
+<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			
+		}
+		body{
+		
+		font-family: 'Poppins', sans-serif;
+		}
+		.head{
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.whole{
+			border: 1px solid black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+
+		}
+		.wrapper{
+			border: 1px solid #d3d3d7;
+			width: 800px;
+			height: 580px;
+			padding: 20px;
+			background-color: #F3F3F3;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+			overflow:hidden;
+			border-radius:15px;
+
+		}
+		.content{
+			display: flex;
+			justify-content:space-around;
+			
+			margin: 25px 0px;
+		}
+		
+		.line{
+			display: flex;
+		}
+		.main{
+			display: flex;
+			justify-content: space-around;
+		
+			padding: 20px 10px;
+		   border-bottom: 1px solid rgb(220,220,220);
+
+		}
+		.profileDiv{
+			display: flex;
+			justify-content: center;
+		
+		}
+		.totalReview{
+			display: flex;
+		}
+		.firstBox{
+          width: 450px;
+          	height: 580px;
+          border: 1px solid #d3d3d7;
+          padding: 20px;
+          background-color: #F3F3F3;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          border-radius:15px;
+          overflow:hidden;
+		}
+		.TextArea{
+			width: 80%;
+			padding: 10px 10px 120px 10px;
+			margin: 30px;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;;
+            border:none;	
+            outline:none	
+		}
+		.EntryProfileDiv{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+		.letter{
+			border: 1px solid black;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			margin-right: 15px;
+			background-color:#696969;
+			color:white;
+			
+			font-size:22px;
+		}
+		.EntryRatings{
+		
+			
+			margin: 30px;
+		}
+		
+        .oldReviews{
+        	color: gray;
+        }
+        .colorgray{
+        	color: gray;
+        }
+        .star{
+        	padding-bottom: 8px;
+        }
+        .name{
+        	padding: 5px;
+        }
+       #heart{
+        	text-align: right;
+          width:100%;
+          
+        } 
+        
+        #titrate{
+        	margin: 15px 15px 15px 0px;
+        	font-size: 20px;
+        	font-family: 'Nunito Sans', sans-serif;
+        }
+        .postBut{
+        	font-size: 15px;
+        	padding: 6px 8px;
+        	background-color:rgb(192,192,192); 
+        	 border-radius: 5px; 
+        	margin-right: 50px;
+        	border:1px solid black;
+        	
+        }
+        .postBut:hover{
+        border: 0.5px solid #AAAAAA;
+		/* border-radius: 5px; */
+		color: black;
+        }
+        .entryProfileName{
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	flex-direction: column;
+        }
+        .entryLetter{
+        	border: 1px solid black;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			margin: 7px;
+			color:white;
+	        background-color:#696969;
+			font-size:22px;
+        }
+        #postDiv{
+        	width:100% ;
+        	text-align: right;
+
+        }
+        .heading ,.line{
+        	font-size: 18px;
+        	margin: 6px 0px 6px ;
+        }
+        .totvalue{
+        	text-align: center;
+        	padding:10px;
+        	font-size:30px;
+        }
+        .lines{
+        	margin: 0px 8px;
+        }
+        #fullMain{
+       overflow: scroll;
+         width:680px;
+         max-height:250px;
+      /*    border: 1px solid black; */
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;;
+        
+         margin: 0px 40px  20px;
+         padding:5px;
+        }
+        .stars{
+        background-color:unset;
+        border:none;
+        font-size:30px;
+        color:black;
+        cursor:pointer;
+        
+        }
+         .fullMain::-webkit-scrollbar {
+              display: none; 
+      }
+      #rev{
+      margin-left:20px;
+      font-family: 'Nunito Sans', sans-serif;
+      }
+      #onecount{
+      color:red;
+      
+      }
+         #twocount{
+      color:orange;
+      
+      }
+         #threecount{
+      color:blue;
+      
+      }
+         #fourcount{
+      color:lightgreen;
+      
+      }
+         #fivecount{
+      color:green;
+      
+      }
+      .oldReviews{
+      margin:20px 0px;
+      }
+   
+       
+</style>
+</head>
+<body>
+<div class="whole">
+	<div class="firstBox">
+		<div class="EntryProfileDiv">
+			<div class="entryProfileName">
+			<p class="entryLetter">K</p>
+			<p>karthiyayini</p></div>
+		
+		</div>
+
+	
+	   <h4 id="titrate">Ratings:</h4>
+	   <div class="EntryRatings">
+	   <button class="stars">&#9734;</button>
+	   	<button class="stars">&#9734;</button>
+	   	 <button class="stars">&#9734;</button>
+	   	   	   	   <button class="stars">&#9734;</button>
+	   	   	   	   	   <button class="stars">&#9734;</button>
+	   	   	   	   	   	   	   	   	  
+	   </div>
+	   <h4 id="titrate">Enter your comment:</h4>
+	   <textarea class="TextArea" id="textValue"></textarea><br>
+	   <div id="postDiv">
+	  
+	   <button type="submit" class="postBut" onclick="clickPost()">Post</button>
+	
+	</div>
+
+	</div>
+	<div class="wrapper">
+	<div class="head">
+		<h2 id="rev">Reviews</h2s>
+	
+	</div>
+	<div class="content">
+		<div class="totalReviews box">
+			<p class="heading">Total Reviews</p>
+			<h2 class="totvalue" id="totReview">2</h2>
+			
+
+		</div>
+		<div class="averageRating box">
+			<p class="heading">Average Rating</p>
+			<h2 class="totvalue" id="totAverage">4.0 </h2>
+		
+		</div>
+		<div class="grap box">
+			<div class="line">
+				<p>5</p>
+				<div class="lines"> ---></div>
+				<div id="fivecount">2.0k</div>
+			</div>
+			<div class="line">
+				<p>4</p>
+				<div class="lines">---></div>
+				<div id="fourcount">2.0k</div>
+			</div>
+			<div class="line">
+				<p>3</p>
+				<div class="lines">---></div>
+				<div id="threecount">2.0k</div>
+			</div>
+			<div class="line">
+				<p>2 </p>
+				<div class="lines">---></div>
+				<div id="twocount">2.0k</div>
+			</div>
+			<div class="line">
+				<p>1</p>
+				<div class="lines">---></div>
+				<div id="onecount">2.0k</div>
+			</div>
+
+
+		</div>
+
+	</div>
+	<div class="fullMain" id="fullMain">
+
+
+</div>
+    </div>
+</div>
+
+</body>
+<script>
+
+const allstars = document.querySelectorAll(".stars");
+console.log(allstars);
+let TextArea = document.getElementById("textValue");
+let totalReview = document.getElementById("totReview");
+let avgRatings = document.getElementById("totAverage");
+let FiveCount = document.getElementById("fivecount");
+let FourCount = document.getElementById("fourcount");
+let ThreeCount = document.getElementById("threecount");
+let TwoCount = document.getElementById("twocount");
+let OneCount = document.getElementById("onecount");
+
+let starCount = 0;
+allstars.forEach((stars,i) => {
+	
+	stars.onclick = function(){
+ 	let current_star_level = i+1;
+    
+ 	starCount = current_star_level;
+ 	console.log(starCount);
+	allstars.forEach((stars,j) => {
+
+		if(current_star_level>= j+1){
+			stars.innerHTML = "&#9733"; 
+			
+		}
+		else{
+			 stars.innerHTML = "&#9734"; 
+		}
+		
+	})
+	}
+	
+})
+	console.log(starCount);
+function clickPost(){
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() { 
+	    if (xhttp.readyState == 4 && xhttp.status == 200) {
+	    	 let result = JSON.parse(xhttp.responseText);
+	    	 const length = Object.keys(result).length;
+	    	 console.log(length);
+	    	 console.log(result);
+    		 console.log(result["user1"].review)
+             totalReview.innerHTML = result["totalreview"];
+	    	  avgRatings.innerHTML = result["totalavg"];
+	    	  FiveCount.innerHTML = result["totalcount5"];
+	    	  FourCount.innerHTML = result["totalcount4"];
+	    	  ThreeCount.innerHTML = result["totalcount3"];
+	    	  TwoCount.innerHTML = result["totalcount2"];
+	    	  OneCount.innerHTML = result["totalcount1"];
+	    	  		let star="star";
+                    let counts = 0;
+					 document.getElementById('fullMain').innerHTML=""; 
+					for(let i=8;i<=length;i++){
+						counts = counts + 1;
+						star="star"+counts;
+	
+	    		 document.getElementById('fullMain').innerHTML+= `<div class='main'>
+	    			<div class='profileDiv'>
+	    			<div class='dummyProfile letter'>K</div>
+	    			<div>
+	    				<p class='name'>${(result["user"+counts]).name}</p>
+	    				<div class='totalReview'>
+	    					
+	    					
+	    			    </div>
+	    			</div>
+
+	    		</div>
+	    		<div class='contentDiv'>
+	    		<div class = ${star}>
+	    		
+	    		   
+	    		   
+	    		   </div>
+	    			<span class='oldReviews'>${(result["user"+counts]).review}</span>
+	    			<div>
+	    	
+	    		</div>
+	    		</div>
+	    	</div>`;
+	    	     
+	    	     let printstars = document.querySelector(`.${star}`)
+	    	     
+	    	     let starlength = result["user"+counts].star;
+	    	     console.log("starlength"+starlength);
+	    	     /* console.log(((result["user1"]).name) + starlength);
+	    	     console.log("starlength"+starlength);
+	    	     for(let i = 0;i<starlength;i++){
+	    	    	 console.log(printstars.children[i]);
+	    	    /*  printstars.children[i].innerHTML += "&#9733"; */
+	    	     /* printstars.children[i].innerHTML = "hi";
+					}   */
+					
+					console.log(printstars)
+					
+					for(let i = 0;i<5;i++){
+						if(i<starlength){
+						  printstars.innerHTML += `⭐`;  
+						}
+						else{
+				     	printstars.innerHTML += `✩`;  
+						}
+					}
+				
+					
+	    		 
+	    	 
+					}
+	    	  
+	    }
+	  };
+	  xhttp.open("GET", "result?starCount="+starCount+"&TextArea="+TextArea.value);
+	  xhttp.send();
+    	 
+     }
+clickPost();
+</script>
+</html>>

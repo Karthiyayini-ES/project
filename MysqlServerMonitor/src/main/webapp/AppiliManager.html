@@ -1,0 +1,1056 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="port.css"> -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-align: center;
+			font-family: 'Poppins', sans-serif;
+			background-color: #F3F3F3;
+			/*color: #748182;*/
+
+		}
+
+		.blackNav{
+			border-radius: 5px;
+			background-color: #454545;
+			margin: auto;
+			width: 98%;
+		}
+
+		.topBlack{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+
+		.logo{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 250px;
+
+		}
+
+		.logo>span{
+			padding-left: 20px;
+		}
+
+		.topBlack > * {
+			padding-top: 20px; 
+		}
+
+		.searchBox{
+			margin-right: 20px; 
+			outline: none;
+			border-radius: 4px;
+			/*border:none;*/
+			border: 1px solid #DDDDDD;
+			padding: 10px 12px;
+		}
+
+		.searchBox:focus{
+			border: 1px solid #74B9EF;
+			box-shadow: 0px 0px 7px 1px #74B9EF;
+		}
+
+		ul{
+			display: flex;
+			flex-direction: row;
+		}
+
+		li{
+			list-style-type: none;
+			padding: 10px 20px;
+		}
+
+		li:hover{
+			background-color: #000000;
+		}
+
+		a{
+			text-decoration:none;
+			color: white;
+
+		}
+
+		.mainpage{
+			border-radius: 5px;
+			width: 98%;
+			background-color: #FFFFFF;
+			margin: auto;
+			/*box-shadow: 2px 2px 5px red;*/
+			/*box-shadow: 0px 0 10px #999;*/
+			box-shadow: 0px 0px 10px 2px #DDDDDD;
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		.mon{
+			
+			/*font-weight: 600;*/
+			/*font-size: 16px;*/
+			padding-bottom: 20px;
+
+		}
+
+		.appPer{
+			text-align: left;
+			/*font-size: 14px;*/
+			/*font-weight: 600;*/
+			padding-top: 35px;
+			padding-left:  35px;
+			
+		}
+
+		.icons{
+			border: 1px solid #EEEEEE;
+			width: 300px;
+			height:200px;
+			margin: 20px;
+			background-color: #F5F5F5;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.icons:hover{
+			background-color: #FFFFFF;
+			box-shadow: 0px 0px 10px 1px #EEEEEE;
+
+		}
+
+		.iconContainer{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.sideCon{
+			border-top:1px solid #DDDDDD;
+			border-left:1px solid #DDDDDD;
+			border-right:1px solid #DDDDDD;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center; 
+
+
+		}
+
+		.sideCon> button{
+			outline: none;
+			border : none;
+			width: 180px;
+			font-size: 13px;
+			background-color: #F5F5F5;
+			padding: 12px 15px;
+			text-align: left;
+			border-bottom:0.5px solid #DDDDDD;
+		}
+
+		.sideCon>button:hover{
+			background-color: #DBDBDB;
+		}
+
+
+		.sideCon>button:focus{
+			background-color: #FFFFFF;
+			border-left: 3px solid #000000;
+		}
+
+		.sideFull{
+			text-align: left;
+			padding: 30px;
+		}
+
+		.iconDabbas{
+			padding-top: 50px;
+		}
+
+		.wholesqlContainer{
+			display: none;
+		}
+
+		.labelAdd {
+		    /* width: 400px; */
+		    /* margin-left: 50px; */
+		    border: 1px solid #E3E3E3;
+		    background-color: #F3F3F3;
+		    /* border-radius: 5px; */
+		    padding: 16px;
+		}
+
+		#cars{
+			outline: none;
+			margin-left: 20px;
+			border: 0.5px solid #BCBCBC;
+			border-radius: 5px;
+			background-color: #F8F8F8;
+		}
+
+		/*.ipAdd{
+			margin-left: 20px;
+		}*/
+
+		.same{
+			padding-right: 79px; 
+		}
+
+
+
+		/*akilprogram*/
+
+
+/*
+		body{
+		    padding: 0%;
+		    margin: 0%;
+		    box-sizing: border-box;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		*/
+
+		/*.sqlClick{
+			width: 100vw;
+
+
+		}*/
+		
+		
+		
+		
+		
+		
+		img{
+		    width: 200px;
+		    margin-top: 20px;
+		}
+
+		.outline{
+		    /*border: 1px solid black;*/
+   			box-shadow: 0px 0px 10px 2px #DDDDDD;
+		    width: 600px;
+		    height: 900px;
+		    text-align: center;
+		    border-radius: 4%;
+		    margin-left: 350px;
+		}
+		
+		
+		.onAndOff{
+		    display: flex;
+		    text-align: center;
+		    margin-left: 10px;
+		}
+		
+		
+		.on{
+		    display: flex;
+		    border: 1px solid green;
+		    height: 50px;
+		    width: 270px;
+		    justify-content: center;
+		    align-items: center;
+		    margin-left: 10px;
+		    background-color: green;
+		}
+		
+		
+		.off{
+		    display: flex;
+		    border: 1px solid red;
+		    height: 50px;
+		    width: 270px;
+		    justify-content: center;
+		    align-items: center;
+		    margin-left: 10px;
+		    /* background-color: red; */
+		}
+		
+		
+		.details{
+		    margin-top: 10px;
+		    display: flex;
+		    align-items: center;
+		    margin-left: 90px;
+		}
+
+		.details>h3{
+			margin-right: 20px;
+		}
+		
+		
+		/*.details > h1{
+		    margin-right: 80px;
+		    margin-left: 30px;
+		    
+		}
+		*/
+		
+		.detailsBox{
+		    border: 1px solid black;
+		    border-radius: 4%;
+		    height: 200px;
+		    width: 300px;
+		}
+		
+		
+		/*.buttons{
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    height: 200px;
+		}*/
+		
+		
+		/*button{
+		    height: 50px;
+		    width: 100px;
+		    padding: 10px;
+		    margin: 10px;
+		}*/
+		
+		
+		.switchLine{
+		    margin-top: 50px;
+		}
+		
+		
+		.statusIcon{
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    height: 100px;
+		    padding: 10px;
+		}
+		
+		
+		.greenIcon{
+		    border: 1px solid black;
+		    background-color: green;
+		    height: 70px;
+		    width: 70px;
+		    border-radius: 50%;
+		    margin: 10px;
+		}
+		
+		
+		.redIcon{
+		    border: 1px solid black;
+		     background-color: red; 
+		    height: 70px;
+		    width: 70px;
+		    border-radius: 50%;
+		    margin: 10px;
+		    
+		}
+
+		.sqlClick{
+			display: none;
+		}
+
+		.selectServer{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.formContainer{
+			display: flex;
+			flex-direction: column;
+			border-right: 0.5px solid #F3F3F3;
+			border-left: 0.5px solid #F3F3F3;
+			border-bottom: 0.5px solid #F3F3F3;
+		}
+
+
+
+
+
+		/*credentials sql*/
+
+
+		
+		
+		.MysqlPage{
+			/*height: 100vh;*/
+			display: none;
+			justify-content: center;
+			align-items: center;
+		}
+		.UserDetails{
+			/*border: 1px solid black;*/
+			/*border-radius: 5%;*/
+			width: 540px;
+			margin: 100px 300px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 20px 40px 20px 30px;
+
+		}
+		
+			.wrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		.head{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 30px;
+		}
+		
+		.Text{
+			margin: 15px 15px 15px 25px;
+			outline: none;
+			padding: 4px 18px;
+			/*height: 25px;*/
+			border: 0.5px solid #DDDDDD;
+			border-radius: 5px;
+			/*font-size: 5px;*/
+			
+		}
+		
+		.Texts{
+			text-align: right;
+			margin: 13px 15px 15px;
+			font-size: 14px;
+			/*font-family:sans-serif;*/
+			/*color: grey;*/
+			/*font-size: 20px;*/
+		}
+
+		.star{
+			color: orangered;
+		}
+
+		.Button{
+			/*text-align: center;*/
+			outline: none;
+			border-radius: 5px;
+			border: 0.5px solid #DDDDDD;
+			/*margin: auto;*/
+			color: #676767;
+			border-radius: 7%;
+			padding: 5px;
+			margin: 20px 20px 20px 10px;
+		}
+
+		.Button:hover{
+			border: 0.5px solid #AAAAAA;
+			border-radius: 5px;
+
+			color: #696969;
+
+		}
+
+		.Text:focus{
+			border: 1px solid skyblue;
+			box-shadow: 5px 0px 15px skyblue;
+		
+		}
+
+		.submitBut{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius:50%;
+			padding-left:0px; 
+		}
+
+
+
+		.wholeNetContainer{
+			display: none;
+		}
+
+
+		.innericons{
+			display: flex;
+		}
+		
+		.networkForm{
+			/* display:flex;sss
+			flex-direction:column;
+			margin-left:400px;
+			margin-top: 100px; */
+			width: 500px;
+ 		    margin: 100px 300px;
+		    display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+/* 		    padding: 20px 40px 20px 30px;
+ */			border-right: 0.5px solid #F3F3F3;
+			border-left: 0.5px solid #F3F3F3;
+			border-bottom: 0.5px solid #F3F3F3;
+		}
+
+			
+		
+		
+		.selectAccess{
+			border: 0.5px solid #E3E3E3;
+		    background-color: #F3F3F3;
+		    /* border-radius: 5px; */
+		    padding: 16px;
+		}
+		
+		.topBar {
+			
+			display:flex;
+			justify-content:space-around;
+			border: 0.5px solid #E3E3E3;
+		    background-color: #F3F3F3;
+		    /* border-radius: 5px; */
+/* 		    padding: 16px;
+ */			
+		}
+		
+		.valueTopBar{
+			height:50px;
+ 			position:relative;
+			/* display:flex;
+ 			justify-content:space-around;
+			border: 0.5px solid #E3E3E3;
+ 		    background-color: #F3F3F3; */
+ 			
+ 		}
+ 		
+ 		.values{
+ 			position:absolute; 			
+/*  			margin-left:;
+ */ 		
+ 		}
+ 		
+ 		.name{
+ 			left:13%;
+ 		}
+ 		
+ 		.ip{
+ 			
+ 			left:44.5%;
+ 			
+ 		}
+ 		
+ 		
+ 		
+ 		.availColor{
+ 			left:81%;
+ 			height:20px;
+ 			width:20px;
+ 			border-radius:50%;
+ 			background-color:green;
+ 		}
+		
+		
+		.NetworkDetails{
+			min-width:1082px;
+			display:none;
+			border-right: 0.5px solid #F3F3F3;
+		    border-left: 0.5px solid #F3F3F3;
+		    border-bottom: 0.5px solid #F3F3F3;
+		    margin: 75px 100px;
+		    
+		
+		}
+	.blackNav button{
+	border:none;
+	outline:none;
+	background-color:#454545;
+	color:white;
+	font-size:17px;
+	}
+   .blackNav button:hover{
+   background-color:black;
+   }
+		
+
+
+	</style>
+
+
+</head>
+<body>
+	<header>
+		<div class="topBlack">
+			<div class="logo">
+				<span>ham</span>
+				<div>Application Manager</div>
+			</div>
+
+			<div class="searchBar">
+				<input type="text" name="" placeholder="Search" class="searchBox">
+			</div>
+
+
+		</div>
+
+
+		<div class="blackNav">
+			<nav>
+				<ul>
+					<li onclick="clickHome()"><a href="#">Home</a></li>
+					<li><a href="#">Monitor</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><form action="Review.html">
+					<button>Feedback</button>
+					</form></li>
+				</ul>
+			</nav>
+		</div>
+
+		
+	</header>
+
+	<main>
+		<div class="mainpage"> 
+				<div class="sideFull">
+					<div class="mon">Add New Monitors</div>
+					<div class="sideCon">
+						<button type="button" class="appSerBut" onclick="clickAppServer()">Application Server</button>
+						<button type="button" class="dbSerBut" onclick="clickDbServer()">Database Server</button>
+						<button type="button" class="netNSerBut" onclick="clickNetServer()">Network and Server</button>
+						<!-- <button type="button">Cloud Apps</button> -->
+					</div>
+				</div>
+
+				<div class="iconDabbas">
+
+					<div class="appPer">Application Performance Monitoring</div>
+
+					<div class="iconContainer">
+						<!-- <a href="#"> -->
+							<div class="selectServer" >
+								<div class="icons tom"> 
+									 <img style="width:50%"  src="tomcat.png"> 
+									<p style="color: black">Tomcat Server</p>
+								</div>
+							<!-- </a> -->
+
+							<!-- <a href="#"> -->
+								<div class="icons sqlDb" onclick="clickSql(this)">
+								  	<img style="width:50%"  src="sss.png"> 
+								 	<p style="color: black">MySQL</p>
+								</div>
+							<!-- </a> -->
+							<div class="icons postgre" onclick="clickSql(this)">
+									<img style="width:30%" src="postgre.png"> 
+								 	<p style="color: black">Postgresql</p>
+								</div>
+
+							<!-- <a href="#"> -->
+								<div class="icons netSer" onclick="clickNetworkDabba()">
+									<!-- <img src="network.jpeg"> -->
+									<p style="color: black">Network & Servers</p>
+								</div>
+							<!-- </a> -->
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="wholesqlContainer">
+
+					<div class="MysqlPage">
+
+						<div class="UserDetails">
+
+							<form action="sqlLogin" method="get" class="formContainer">
+							
+								<div class="labelAdd">
+
+									<label for="cars">Add Monitor of type</label>
+
+									<select name="My machine" id="cars">
+
+									  <option>My machine</option>
+									  <option>Remote machine</option>
+									  
+									</select> 
+
+								</div>
+							
+							    <div class="wrapper">
+						            
+					                <div class="Texts same" >Display Name<span class="star">*</span><input type="text" class="Text" id="displayName"/> </div>
+					                <div class="Texts" >Ip Address<span class="star">*</span><input type="text" class="Text ipAd" id="ipAddress"/><button type="submit" class="Button" id="getIpBtn" name="myIp" value="getIp" >Get IP</button></div>
+					                <div class="Texts same" >Port<span class="star">*</span><input type="text" class="Text" id="portNum" value="22" disabled/></div>
+					                <div class="Texts same" >User Name<span class="star">*</span><input type="text" class="Text" id="userName"/></div>
+					                <div class="Texts same" >Password<span class="star">*</span><input type="text" class="Text" id="pass"/></div>
+					                <div class="Texts same" >Polling Point<span class="star">*</span><input type="text" class="Text" id="timeSchedule"/></div>
+						            
+
+							  	</div>
+
+								<div class="submitBut">
+									<button type="button" class="Button" onclick="clickTestAndSubmit()" name="sqlLogin" value="SubmitSqlLogin">Test Credentials</button>
+							    </div>
+
+						    </form>	
+
+						</div>
+
+					</div>
+
+
+
+					<div id="startStop" class="sqlClick">
+				
+						<div class="outline">
+
+					        <h3>MySQL status</h3>
+					        <!-- <div class="line"></div> -->
+					        <!-- <img src="sss.png" alt="Mysql"> -->
+					        <!-- <div class="line"></div> -->
+					        <h3>Current Status</h3>
+
+					        <div class="statusIcon">
+					            <div class="greenIcon" id="greenIcon"></div>
+					            <div  class="redIcon" id="redIcon"></div>
+					        </div>
+					        
+
+					        <div class="details">
+					            <h3>Details</h3>
+					            <div class="detailsBox" id="mysqlStatus"></div>
+					        </div>
+					        
+					        <div class="switchLine"> <h3>Server Switch</h3> </div>
+
+					        <div class="onAndOff">
+					            <button type="button" class="on" class="onOff" onclick="StartStop(this)">ON</button>
+					            <button type="button" class="off"  class="onOff" onclick="StartStop(this)">OFF</button>
+					        </div>
+
+					    </div>
+
+					</div>
+
+				</div>
+
+				<div class="wholeNetContainer">
+
+																													<!-- <div> -->
+																								
+																													<!-- <div class="netSerinnerContainer"> -->
+
+<!-- 					<div class="fillNet" >
+ -->					
+						<form action = "" method="get" class="networkForm" >
+						
+							
+							<div class="selectAccess">
+
+								<label for="bikes">Add Monitor of type</label>
+
+								<select name="My machine" id="bikes">
+
+								  <option>My machine</option>
+								  <option>Remote machine</option>
+								  
+								</select> 
+
+							</div>
+							
+							<div class="ipNpolDabba">
+							
+								<div class="Texts" >Ip Address<span class="star">*</span><input type="text" class="Text ipAd" id="conIp" name="NetipAddress"/><button type="submit" class="Button" id="t" name="myIp" value="getIp" onclick="getIpAddress()" >Get IP</button></div>
+								<div class="Texts same" >Polling Point<span class="star">*</span><input type="text" class="Text" name="pollingTime"/></div>							
+							
+							
+							</div>	
+							
+							<div class="submitButton">
+									<button type="submit" class="Button" onclick="clickNetTestCred()" name="NetLogin" value="SubmitNetLogin">Test Credentials</button>
+							</div>				
+						
+						
+						</form>
+					
+			
+					
+																																																																																								
+							<div class="NetworkDetails">
+						
+							<div class="topBar">
+								<p>Name</p>
+								<p>IP</p>
+								<p>Availability</p>
+							
+							</div>
+							
+							<div class="valueTopBar">
+								<p class="name values">meenatchi</p>
+								<p class="ip values">10.52.0.208</p>
+								<p class="availColor values"></p>
+							
+							</div>
+						
+						</div>
+					
+				</div>
+			
+
+		</div>
+
+
+
+
+	  	<!-- second page -->
+</main>
+	<footer></footer>
+	
+
+</body>
+<!-- <script type="text/javascript" src="app.js"></script> -->
+<script>
+const SQLLOGINDISPLAY = document.querySelector(".MysqlPage");
+const SQLLOGO = document.querySelector(".iconDabbas");
+const SQLDETAILS = document.querySelector("#startStop");
+const WHOLESQLCONTAINER = document.querySelector(".wholesqlContainer");
+const SELECTOPTION = document.querySelector("#cars");
+const IPBTN = document.querySelector("#getIpBtn");
+const IPINPUTBOX = document.getElementsByName("ipAddress")
+const TOMDABBA = document.querySelector(".tom");
+const SQLDABBA = document.querySelector(".sqlDb");
+const NETSERDABBA = document.querySelector(".netSer");
+/*const NETSERCONTAINER = document.querySelector(".selectNetSer");
+*/const WHOLENSCON = document.querySelector(".wholeNetContainer");
+const WHOLEINNSCON = document.querySelector(".wholeinnerNetSerContainer");
+const SERVERALONE = document.querySelector(".wholeServer");
+const a = document.querySelector(".ipAd");
+const b = document.querySelector("#t");
+const NETIP = document.querySelector("#conIp")
+/*const startStopPage = document.querySelector("#startStop");*/
+const FILLIPDET = document.querySelector(".networkForm");
+const NETDET = document.querySelector(".NetworkDetails");
+function _(ele){
+	return document.getElementById(ele);
+}
+let DispName = _("displayName");
+let IpAddress = _("ipAddress");
+let UserName = _("userName");
+let Password = _("pass");
+let Port = _("portNum");
+let statusDiv = _("mysqlStatus");
+let greenIcon = _("greenIcon");
+let redIcon = _("redIcon");
+
+
+
+let sqltype = "";
+
+function clickSql(ele){
+	sqltype = ele.innerText; 
+	console.log(sqltype);
+
+	SQLLOGO.style.display="none";
+	WHOLESQLCONTAINER.style.display="flex";
+	SQLLOGINDISPLAY.style.display="flex";
+
+}
+
+function clickTestAndSubmit(){
+	/* setInterval(clickTestAndSubmit,9000);  */
+	try1();
+}
+function try1(){
+	SQLLOGINDISPLAY.style.display="none";
+	SQLDETAILS.style.display = "block";
+	console.log(IpAddress.value);
+	console.log(UserName.value);
+	console.log(Password.value);
+	console.log(Port.value);
+	console.log(statusDiv.value);
+	   var request = new XMLHttpRequest();
+	  
+	    request.onreadystatechange = function() {
+	        if(this.readyState === 4 && this.status === 200) {
+	     
+	         	let result = JSON.parse(request.responseText);
+	            console.log(result);
+	        	let ans = result["MysqlStatus"];
+	        	console.log(ans);
+	        	statusDiv.innerText = ans; 
+	           
+/* 	        	statusDiv.innerText = " ";
+ */	    
+	        	if(ans.includes("inactive")){
+	        		greenIcon.style.display = "none";
+	        		redIcon.style.display = "block";
+	        	}
+	        	else if(ans.includes("active")){
+	        		redIcon.style.display = "none";
+	        		greenIcon.style.display = "block";
+	        	}
+	       	
+	        }
+	        
+	    }
+	    statusDiv.innerText = " ";
+	     let url = `mysqlServer?UserName=${UserName.value}&Password=${encodeURIComponent(Password.value)}&IpAddress=${IpAddress.value}&sqltype=${sqltype};`
+	    //let newurl = encodeURIComponent(url); 
+	    request.open("GET",url);
+	    request.send();
+
+}
+function StartStop(ele){
+	console.log("clickfunction")
+	console.log(sqltype);
+	console.log(ele.innerText);
+	var request = new XMLHttpRequest();
+	 request.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+        	let result = JSON.parse(request.responseText);
+        	console.log(result);
+        	clickTestAndSubmit();
+        	
+            console.log("startstopresponse");
+        }
+    }
+	 let newurl = `mysqlServerStartStop?UserName=${UserName.value}&Password=${encodeURIComponent(Password.value)}&IpAddress=${IpAddress.value}&sqltype=${sqltype}&startStop=${ele.innerText};`
+    request.open("GET",newurl,true);
+    request.send();
+}
+
+
+function clickHome(){
+	WHOLESQLCONTAINER.style.display="none";
+	SQLLOGINDISPLAY.style.display="none";
+	SQLDETAILS.style.display="none";
+	SQLLOGO.style.display="block";
+	WHOLENSCON.style.display="none";
+	
+
+}
+
+
+function hideGetIp (){
+	if(SELECTOPTION.value=="Remote machine"){
+		IPBTN.style.visibility="hidden";
+	}
+	else{
+		IPBTN.style.visibility="visible";
+	}
+}
+SELECTOPTION.addEventListener("change",hideGetIp);
+
+
+
+function clickAppServer(){
+	TOMDABBA.style.display="flex";
+	SQLDABBA.style.display="none";
+	NETSERDABBA.style.display="none";
+
+}
+
+
+function clickDbServer(){
+	TOMDABBA.style.display="none";
+	SQLDABBA.style.display="flex";
+	NETSERDABBA.style.display="none";
+
+}
+
+function clickNetServer(){
+	TOMDABBA.style.display="none";
+	SQLDABBA.style.display="none";
+	NETSERDABBA.style.display="flex";
+
+}
+
+
+function clickNetworkDabba(){
+	SQLLOGO.style.display="none";
+	WHOLENSCON.style.display="flex";
+	FILLIPDET.style.display="flex";
+	
+}
+
+function clickNetTestCred(){
+	FILLIPDET.style.display="none";
+	NETDET.style.display="block";
+	
+}
+
+
+/*function clickNetSerDabba(){
+	NETSERCONTAINER.style.display="flex";
+	// WHOLESQLCONTAINER.style.display="none";
+	// SQLLOGINDISPLAY.style.display="none";
+	// SQLDETAILS.style.display="none";
+	SQLLOGOCLIQ.style.display="none";
+	WHOLENSCON.style.display="flex";
+
+}
+
+
+function clickNetworkDabba(){
+	NETSERCONTAINER.style.display="none";
+	WHOLEINNSCON.style.display="flex";
+	NETALONE.style.display="flex"
+
+}
+
+
+function clickNetworkDabba(){
+	NETSERCONTAINER.style.display="none";
+	// NETALONE.style.display="none"
+	WHOLEINNSCON.style.display="flex";
+	SERVERALONE.style.display="flex";
+
+
+}*/
+
+
+
+function getIpAddress(){
+	event.preventDefault()
+
+	var xhttp = new XMLHttpRequest();
+		
+	xhttp.onreadystatechange = function(){
+	if(xhttp.readyState ==4&&xhttp.status==200  ){
+		let result = JSON.parse(xhttp.responseText)
+			a.value = result["ipAdd"]
+			NETIP.value = result["ipAdd"]
+		}
+		
+	
+	}
+	xhttp.open("GET","sqlLogin",true);	
+	xhttp.send();
+	
+}
+
+IPBTN.addEventListener("click",getIpAddress);
+b.addEventListener("click",getIpAddress);
+
+</script>
+</html>
+		
+
+
+
